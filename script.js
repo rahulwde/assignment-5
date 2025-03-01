@@ -35,8 +35,13 @@ for (let completedButton of completedButtons) {
   });
 }
 const date = new Date();
-const monthName = date.toLocaleString("en-US", { month: "long" });
-const day = date.getDay();
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let months = [
+  "January","February","March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+const monthName = months[date.getMonth()]
+const day = days[date.getDay()]
 const dates = date.getDate();
 const year = date.getFullYear();
 document.getElementById("getdate").innerText =
@@ -55,3 +60,5 @@ document.getElementById("theme").addEventListener("click", function () {
 
   document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
 });
+
+

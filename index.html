@@ -13,7 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-slate-100">
-    <header class="max-w-screen-xl mx-auto pt-5 pb-2">
+    <header class="max-w-screen-xl mx-auto pt-5 pb-2 max-h-screen">
       <div class="bg-white rounded-xl p-4 flex justify-between">
         <div class="flex items-center gap-5">
           <img src="./assets/logo.png" alt="" />
@@ -24,9 +24,9 @@
         <div class="flex justify-between gap-10">
           <div class="flex gap-2 px-5 items-center bg-slate-100 rounded-2xl">
             <img src="./assets/checkbox.png" alt="" />
-            <div class="text-2xl">23</div>
+            <div class="text-2xl" id="checkout">23</div>
           </div>
-          <div>
+          <div id="theme">
             <img src="./assets/theme-btn.png" alt="" />
           </div>
         </div>
@@ -43,13 +43,13 @@
               <div><img src="./assets/checkbox.png" alt="" /></div>
               <div class="">
                 <div>Task Assigned</div>
-                <div class="font-bold text-xl">05</div>
+                <div class="font-bold text-xl" id="task">6</div>
               </div>
             </div>
 
             <div
               class="flex items-center col-span-2 bg-slate-100 p-3 rounded-2xl bg-gradient-to-r from-blue-600 to-blue-200"
-            >
+             id="new-page">
               <img src="./assets/board.png" alt="" />
               <div class="text-white">
                 Discover Something <br />
@@ -60,17 +60,16 @@
               class="bg-slate-100 p-4 rounded-xl flex justify-around items-center"
             >
               <div><img src="./assets/calender.png" alt="" /></div>
-              <div>
-                Wed , <br />
-                Jul 28 2025
+              <div id="getdate">
+                
               </div>
             </div>
           </div>
 
-          <div class="grid grid-cols-3 p-4 gap-5">
+          <div class="grid grid-cols-3 p-4 gap-5" >
             <div class="bg-slate-100 p-6 rounded-xl">
               <div class="bg-white p-1 inline-block">ShopEase</div>
-              <div class="text-xl font-semi-bold">Fix Mobile Button Issue</div>
+              <div class="text-xl font-semi-bold titles" id="ShopEase">Fix Mobile Button Issue</div>
               <div
                 class="text-sm h-14 rounded-md mt-3 overflow-hidden bg-white p-3"
               >
@@ -82,116 +81,118 @@
                   Deadline
                   <div>21 March 2025</div>
                 </div>
-                <button class="bg-blue-500 text-white p-2 rounded-lg px-4">
+                <button class="bg-blue-500 text-white p-2 rounded-lg px-4 completed">
                   Completed
                 </button>
               </div>
             </div>
             <div class="bg-slate-100 p-6 rounded-xl">
-              <div class="bg-white p-1 inline-block">ShopEase</div>
-              <div class="text-xl font-semi-bold">Fix Mobile Button Issue</div>
+              <div class="bg-white p-1 inline-block">CloudSync</div>
+              <div class="text-xl font-semi-bold titles" id="CloudSync">Add Dark Mode</div>
               <div
                 class="text-sm h-14 rounded-md mt-3 overflow-hidden bg-white p-3"
               >
-                Debug using Chrome DevTools, check for overlapping elements, and
-                ensure onClick works properly and ensure onClick works properly
+              Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
               </div>
               <div class="flex justify-between items-center mt-4">
                 <div class="text-sm">
                   Deadline
                   <div>21 March 2025</div>
                 </div>
-                <button class="bg-blue-500 text-white p-2 rounded-lg px-4">
+                <button class="bg-blue-500 text-white p-2 rounded-lg px-4 completed " >
                   Completed
                 </button>
               </div>
             </div>
             <div class="bg-slate-100 p-6 rounded-xl">
-              <div class="bg-white p-1 inline-block">ShopEase</div>
-              <div class="text-xl font-semi-bold">Fix Mobile Button Issue</div>
+              <div class="bg-white p-1 inline-block">SwiftPay</div>
+              <div class="text-xl font-semi-bold titles" id="SwiftPay">Optimize  Home page </div>
               <div
                 class="text-sm h-14 rounded-md mt-3 overflow-hidden bg-white p-3"
               >
-                Debug using Chrome DevTools, check for overlapping elements, and
-                ensure onClick works properly and ensure onClick works properly
+              Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
               </div>
               <div class="flex justify-between items-center mt-4">
                 <div class="text-sm">
                   Deadline
                   <div>21 March 2025</div>
                 </div>
-                <button class="bg-blue-500 text-white p-2 rounded-lg px-4">
+                <button class="bg-blue-500 text-white p-2 rounded-lg px-4 completed">
                   Completed
                 </button>
               </div>
             </div>
             <div class="bg-slate-100 p-6 rounded-xl">
-              <div class="bg-white p-1 inline-block">ShopEase</div>
-              <div class="text-xl font-semi-bold">Fix Mobile Button Issue</div>
+              <div class="bg-white p-1 inline-block">Meta</div>
+              <div class="text-xl font-semi-bold titles" id="meta">Add new emoji 🤲</div>
               <div
                 class="text-sm h-14 rounded-md mt-3 overflow-hidden bg-white p-3"
               >
-                Debug using Chrome DevTools, check for overlapping elements, and
-                ensure onClick works properly and ensure onClick works properly
+              Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
               </div>
               <div class="flex justify-between items-center mt-4">
                 <div class="text-sm">
                   Deadline
                   <div>21 March 2025</div>
                 </div>
-                <button class="bg-blue-500 text-white p-2 rounded-lg px-4">
+                <button class="bg-blue-500 text-white p-2 rounded-lg px-4 completed">
                   Completed
                 </button>
               </div>
             </div>
             <div class="bg-slate-100 p-6 rounded-xl">
-              <div class="bg-white p-1 inline-block">ShopEase</div>
-              <div class="text-xl font-semi-bold">Fix Mobile Button Issue</div>
+              <div class="bg-white p-1 inline-block">Google LLC</div>
+              <div class="text-xl font-semi-bold titles" id="Google">Integrate OpenAI API </div>
               <div
                 class="text-sm h-14 rounded-md mt-3 overflow-hidden bg-white p-3"
               >
-                Debug using Chrome DevTools, check for overlapping elements, and
-                ensure onClick works properly and ensure onClick works properly
+              Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
               </div>
               <div class="flex justify-between items-center mt-4">
                 <div class="text-sm">
                   Deadline
                   <div>21 March 2025</div>
                 </div>
-                <button class="bg-blue-500 text-white p-2 rounded-lg px-4">
+                <button class="bg-blue-500 text-white p-2 rounded-lg px-4 completed">
                   Completed
                 </button>
               </div>
             </div>
             <div class="bg-slate-100 p-6 rounded-xl">
-              <div class="bg-white p-1 inline-block">ShopEase</div>
-              <div class="text-xl font-semi-bold">Fix Mobile Button Issue</div>
+              <div class="bg-white p-1 inline-block">Glassdoar</div>
+              <div class="text-xl font-semi-bold titles" id="Glassdoar" >Improve Job searching </div>
               <div
                 class="text-sm h-14 rounded-md mt-3 overflow-hidden bg-white p-3"
               >
-                Debug using Chrome DevTools, check for overlapping elements, and
-                ensure onClick works properly and ensure onClick works properly
+              Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+              and ensure onClick works properly
               </div>
               <div class="flex justify-between items-center mt-4">
                 <div class="text-sm">
                   Deadline
                   <div>21 March 2025</div>
                 </div>
-                <button class="bg-blue-500 text-white p-2 rounded-lg px-4">
+                <button class="bg-blue-500 text-white p-2 rounded-lg px-4 completed">
                   Completed
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="max-h-full mx-auto bg-white w-full rounded-2xl">
-          <div class="flex mt-5 justify-center gap-3">
+        <div class="max-h-full mx-auto bg-white w-full rounded-2xl" >
+          <div class="flex mt-5 justify-center gap-3" >
             <img src="./assets/activity.png" alt="" />
-            <div>Activity Log</div>
+            <div class="font-semibold">Activity Log</div>
           </div>
-          <button class="block mx-auto mt-5 rounded-lg bg-blue-600 p-2 text-white ">Clear History</button>
+          <button class="block mx-auto mt-5 rounded-lg bg-blue-600 p-2 text-white " id="clear-history" >Clear History</button>
+
+          <div id="history" class="mt-5 p-5" >
+           
+          </div>
         </div>
       </div>
     </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>
